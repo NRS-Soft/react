@@ -1,0 +1,40 @@
+{
+    "name": "react",
+    "version": "1.0.0",
+    "description": "A React template",
+    "main": "index.js",
+    "repository": "https://github.com/NRS-Soft/react.git",
+    "author": "sebastinez <sebastinez@me.com>",
+    "license": "MIT",
+    "private": false,
+    "scripts": {
+        "start": "webpack serve --mode development",
+        "build": "webpack --mode production --quiet",
+        "format": "prettier --write ."
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true
+    },
+    "dependencies": {
+        "react": "17.0.1",
+        "react-dom": "17.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "7.12.10",
+        "@babel/preset-env": "^7.12.10",
+        "@babel/preset-react": "^7.12.10",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "awesome-typescript-loader": "^5.2.1",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^5.0.1",
+        "html-webpack-plugin": "^4.5.0",
+        "prettier": "2.2.1",
+        "style-loader": "^2.0.0",
+        "typescript": "^4.1.3",
+        "webpack": "5.10.1",
+        "webpack-cli": "4.2.0",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
