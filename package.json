@@ -4,12 +4,12 @@
     "description": "A React template",
     "main": "index.js",
     "repository": "https://github.com/NRS-Soft/react.git",
-    "author": "sebastinez <sebastinez@me.com>",
+    "author": "sebastinez <smartinez@nuclearis.com>",
     "license": "MIT",
     "private": false,
     "scripts": {
-        "start": "webpack serve --mode development",
-        "build": "webpack --mode production --quiet",
+        "start": "npx ./utils/* && webpack serve --mode development --env ENVIRONMENT=development",
+        "build": "webpack --mode production --env ENVIRONMENT=production --quiet",
         "format": "prettier --write ."
     },
     "prettier": {
@@ -39,6 +39,7 @@
         "awesome-typescript-loader": "^5.2.1",
         "babel-loader": "^8.2.2",
         "css-loader": "^5.0.1",
+        "dotenv": "^8.2.0",
         "html-webpack-plugin": "^4.5.0",
         "prettier": "2.2.1",
         "style-loader": "^2.0.0",
